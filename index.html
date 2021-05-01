@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riio's To Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>To-Do List</h1>
+        </div>
+        <div class="content">
+            <div class="add-item">
+                <div class="add-item-header">
+                    <h2>Add Item</h2>
+                </div>
+                <form action="POST">
+                    <textarea name="addItem" class="add-item-text" id="" cols="30" rows="10"></textarea>
+                    <button id="add-item-btn" class="add-item-btn" type="submit">Add Item</button>
+                </form>
+            </div>
+            <div class="item-list">
+                <div class="item-list-header">
+                    <h3>Items Remaining</h3>
+                </div>
+                <div id="item-list-section">
+                    <ul>
+                        <li>
+                            <input type="checkbox">
+                            <p>Take out the trash</p>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="completed-list">
+                <div class="completed-list-header">
+                    <h3>Completed Items</h3>
+                </div>
+                <div id="completed-list-section">
+                    <ul>
+                        <li>
+                            <p>Was the dishes</p>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

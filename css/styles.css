@@ -1,0 +1,35 @@
+.container {
+   max-width: 960px;
+   text-align: center;
+   border: grey 1px solid;
+}
+.content{
+    border: darkgrey 1px solid;
+}
+.header{
+    margin: 0 auto;
+}
+
+.add-item-text{
+    resize: none;
+    height: 65px;
+    width: 220px;
+}
+.add-item-btn{
+    display: block;
+    margin: 0 auto;
+    width: 200px;    
+}
+
+ul > li {
+    list-style-type: none;
+    display: inline;
+}
+
+li > p {
+    display: inline;
+    margin: 10px;
+}
+li > button {
+    margin-left: 10px;
+}
