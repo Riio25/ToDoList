@@ -19,24 +19,33 @@
                 <div class="add-item-header">
                     <h2>Add Item</h2>
                 </div>
-                <form action="POST">
-                    <textarea name="addItem" class="add-item-text" id="" cols="30" rows="10"></textarea>
-                    <button id="add-item-btn" class="add-item-btn" type="submit">Add Item</button>
+                <form action="javascript:void(0)" method="POST">
+                    <textarea name="addItem" class="add-item-text" id="item-to-add" cols="30" rows="10"></textarea>
+                    <button name="submit-btn" id="add-item-btn" class="add-item-btn" type="submit">Add Item</button>
                 </form>
             </div>
-            <div class="item-list">
+            <div id="item-list-section">
                 <div class="item-list-header">
                     <h3>Items Remaining</h3>
                 </div>
-                <div id="item-list-section">
-                    <ul>
-                        <li>
-                            <input type="checkbox">
-                            <p>Take out the trash</p>
-                            <button>Edit</button>
-                            <button>Delete</button>
-                        </li>
-                    </ul>
+                <div>
+                    <table id="item-list-table">
+                        <thead>
+                            <th>
+                                <tr>
+                                    <td>Done</td>
+                                    <td>Task Name</td>
+                                    <td>Modify</td>
+                                </tr>
+                            </th>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                        
+                        
+                    </table>
+                    
                 </div>
                 
             </div>
@@ -45,11 +54,7 @@
                     <h3>Completed Items</h3>
                 </div>
                 <div id="completed-list-section">
-                    <ul>
-                        <li>
-                            <p>Was the dishes</p>
-                        </li>
-                    </ul>
+                   <table id="completed-items-table"></table>
                 </div>
                 
             </div>

@@ -2,6 +2,7 @@
    max-width: 960px;
    text-align: center;
    border: grey 1px solid;
+   margin: 0 auto;
 }
 .content{
     border: darkgrey 1px solid;
@@ -21,15 +22,6 @@
     width: 200px;    
 }
 
-ul > li {
-    list-style-type: none;
-    display: inline;
-}
-
-li > p {
-    display: inline;
-    margin: 10px;
-}
-li > button {
-    margin-left: 10px;
+table{
+    margin: 0 auto;
 }
